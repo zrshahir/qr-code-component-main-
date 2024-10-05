@@ -22,22 +22,26 @@
       text-align: center; 
       margin-left: 224px; 
     }
-    h1 {
+    /* h1 {
       font-size: 15px; 
       font-weight: 700; 
-      text-align: center; 
+      text-align: left; 
       margin-left: 165px; 
       color: hsl(218, 44%, 22%); 
       margin-right: 990px; 
+      display: inner-block; 
+      vertical-align: middle; 
     }
     p {
       font-size: 15px; 
       font-weight: 400; 
-      text-align: center; 
+      text-align: left; 
       margin-left: 165px; 
       color: hsl(216, 15%, 48%);
       margin-right: 990px; 
-    }
+      display: inner-block; 
+      vertical-align: middle; 
+    } */
     .white-card img {
       display: block; 
       text-align: center;
@@ -60,14 +64,35 @@
       max-width: fit-content; 
       left: 365px;
     }
+    .line1 div, .line2 div {
+      display: inline-block; 
+    }
+    .line1 div {
+      color: hsl(218, 44%, 22%); 
+      font-size: 16px; 
+      font-weight: 700; 
+    }
+    .line2 div {
+      color:  hsl(216, 15%, 48%);
+      font-size: 15px; 
+      font-weight: 400; 
+    }
   </style>
 </head>
 <body>
 <div class="little-card">
   <div class="white-card">
   <img src="images/image-qr-code.png">
-  <h1>Improve your front-end skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <div class="line1">
+  <div>Improve your front-end</div>
+  <div>skills by building projects</div>
+  <div class="line2">
+  <div>Scan the QR code to visit Frontend</div>
+  <div>Mentor and take your coding skills to</div>
+  <br/>
+  <div>the next level</div>
+  </div>
+  </div>
   </div>
   </div>
   <div class="attribution">
@@ -76,6 +101,11 @@
   </div>
 </body>
 </html>
+
+
+
+
+
 
 
 
